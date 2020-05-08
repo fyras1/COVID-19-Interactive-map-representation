@@ -13,7 +13,7 @@ if (!file.exists(filename))
 
 covid<- read.xlsx(filename,sheet=1)
 countries<-read.csv("data\\countries.csv")
-codes<-read.csv("data\\codes.csv")
+codes<-read.csv("data\\codes.csv" )
 
 df<-group_by(covid,countryCode=countryterritoryCode) %>% summarise(cases=sum(cases),deaths=sum(deaths),population=mean(popData2018))
 

@@ -53,4 +53,4 @@ map
 This data was obtained from the [*European Centre for Disease Prevention and Control Wibsite(ECDC)*](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide)      
 
 ### Source code:     
-Full source code with the necessary data files can be found  [here](https://github.com/fyras1/COVID-19-worldwide-Interactive-map)
+Full source code with the necessary data files can be found  [here](https://github.com/fyras1/COVID-19-worldwide-Interactive-map )
