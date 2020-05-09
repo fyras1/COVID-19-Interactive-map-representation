@@ -1,6 +1,6 @@
 ---
 title: 'COVID-19 : worldwide interacive map'
-author: "Firas Ismail"
+author: "fyras1"
 date: "08/05/2020"
 output: html_document
 ---
@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE,warning = FALSE,message = FALSE)
 ```
 
 ### Cases and deaths by country up to `r Sys.Date()-1`  
-This map can be automatically updated by re-knitting the *map.RMD* file everyday.
+This map can be automatically updated by re-knitting the [*map.RMD*](https://github.com/fyras1/COVID-19-worldwide-Interactive-map/blob/master/map.Rmd) file.
 
 ```{r, echo=FALSE }
 library(leaflet)
