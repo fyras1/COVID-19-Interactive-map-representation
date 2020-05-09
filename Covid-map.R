@@ -28,7 +28,7 @@ df<-merge(df,combined[,c(2:5)],by.x="countryCode",by.y="Alpha.3.code")
 map<-df%>% 
     leaflet() %>% 
     addTiles() %>% 
-    addCircles(lng=df$longitude,lat=df$latitude, weight=1,radius=sqrt(df$cases)*1500,label = paste0("Cases in ",df$name," : ",format(df$cases, big.mark=",")),color = "blue",labelOptions = labelOptions(interactive=TRUE,textsize="17px")) %>% 
+    addCircles(lng=df$longitude,lat=df$latitude, weight=1,radius=sqrt(df$cases)*1500,label = paste0("Cases in ",df$name," : ",format(df$cases, big.mark=",") ,"\n new cases="),color = "blue",labelOptions = labelOptions(interactive=TRUE,textsize="17px")) %>% 
     addCircles(lng=df$longitude,lat=df$latitude, weight=1,radius=sqrt(df$deaths)*1500,label = paste0("Deaths in ",df$name," : ",format(df$deaths, big.mark=",")),color = "red",labelOptions = labelOptions(interactive=TRUE,textsize="17px")) 
     
 print(map)
